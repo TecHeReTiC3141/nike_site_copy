@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailWind</title>
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+    <main class="p-5 text-center">
+        <h1 class="text-blue-400 underline">Hello Tailwind</h1>
+        
+        <div class="w-ful bg-purple-300  border-violet-600 
+        border rounded-md py-3 my-4">
+            <h1 class="text-blue-600 underline text-center">Hello Tailwind</h1>
+        </div>
+
+        <div class="h-10 w-10 bg-red-600 fixed "></div>
+        <div class="h-10 bg-green-600 w-full"></div>
+
+        <div class="flex justify-center gap-4 my-4">
+            <div class="w-16 h-16 bg-blue-500 rounded-full"></div>
+            <div class="w-16 h-16 bg-blue-500 rounded-full"></div>
+            <div class="w-16 h-16 bg-blue-500 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-5 gap-2">
+            <div class="h-12 bg-violet-500"></div>
+            <div class="h-12 bg-violet-500"></div>
+            <div class="h-12 bg-violet-500"></div>
+            <div class="h-12 bg-violet-500"></div>
+            <div class="h-12 bg-violet-500"></div>
+        </div>
+
+        <div>
+        </div>
+        <p class="hidden md:block">Only for medium+ devices</p>
+        <p class="hidden max-md:block">Only for medium- devices</p>
+
+        <button class="bg-blue-600 py-2 px-4 rounded text-white hover:rounded-lg hover:bg-blue-700  hover:shadow relative active:top-1 active:bg-blue-800 focus:outline-none focus:ring focus:ring-blue-300">
+            Click me!
+        </button>
+
+        <ul class="text-start mt-2">
+            <p class=" mb-4 last:mb-0 px-2 first:bg-yellow-300">Item1</p>
+            <p class="even:bg-green-200 odd:bg-blue-200 mb-4 last:mb-0 px-2 first:bg-yellow-200">Item2</p>
+            <p class="even:bg-green-200 odd:bg-blue-200 mb-4 last:mb-0 px-2 first:bg-yellow-200">Item1</p>
+            <p class="even:bg-green-200 odd:bg-blue-200 mb-4 last:mb-0 px-2 first:bg-yellow-200">Item2</p>
+        </ul>
+    </main>
+        
+</body>
+</html>
