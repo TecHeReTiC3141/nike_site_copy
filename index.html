@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 <body>
-    <main class="p-5 text-center">
+    <main class="p-5  dark:bg-gray-800 dark:text-gray-200">
         <h1 class="text-blue-400 underline">Hello Tailwind</h1>
         
         <div class="w-ful bg-purple-300  border-violet-600 
@@ -15,7 +15,6 @@
             <h1 class="text-blue-600 underline text-center">Hello Tailwind</h1>
         </div>
 
-        <div class="h-10 w-10 bg-red-600 fixed "></div>
         <div class="h-10 bg-green-600 w-full"></div>
 
         <div class="flex justify-center gap-4 my-4">
@@ -47,7 +46,18 @@
             <p class="even:bg-green-200 odd:bg-blue-200 mb-4 last:mb-0 px-2 first:bg-yellow-200">Item1</p>
             <p class="even:bg-green-200 odd:bg-blue-200 mb-4 last:mb-0 px-2 first:bg-yellow-200">Item2</p>
         </ul>
+
+        <div class="m-10 rounded-lg ring-1 ring-slate-900/5 bg-white shadow-lg px-6 py-8 dark:bg-gray-900 
+        ease-linear duration-500">
+            <h1 class="text-base font-medium tracking-tight text-slate-900 dark:text-white">Some header </h1>
+            <p class="text-sm text-slate-600 dark:text-blue-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt cumque, sunt sint quis corrupti distinctio exercitationem cum accusantium libero blanditiis quibusdam, id officia, tempore cupiditate dolorum. Aperiam fuga veniam cumque libero veritatis voluptas nam impedit nemo, aut asperiores sed reiciendis pariatur itaque totam vitae obcaecati!</p>
+            <button id="toggelTheme" class="bg-blue-100 text-blue-800 rounded border-blue-500 p-2 mt-4
+            dark:bg-blue-800 dark:text-blue-100"
+            onClick="document.documentElement.classList.toggle('dark')">Toggle Theme</button>
+        </div>
+
+        <p class="text-chestnut text-2xl">Nice color, bro</p>
     </main>
-        
+
 </body>
 </html>
