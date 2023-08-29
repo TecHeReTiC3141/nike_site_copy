@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-// import './App.css'
+import React, { useState } from 'react'
+
+import './index.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline text-center">
-        Hello world!
-      </h1>
-    </>
+    
+    <div className="w-full text-center">
+       <h1 className="text-3xl text-blue-600 font-bold underline ">
+      Hello world!
+    </h1>
+    </div>
+     
+
   )
 }
 
