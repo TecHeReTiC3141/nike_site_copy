@@ -26,9 +26,9 @@ export default function App() {
 
       </section>
 
-      <section className="padding">
+      {/* <section className="padding">
         <Products />
-      </section>
+      </section> */}
       <section className="padding">
         <PopularProducts />
       </section>
