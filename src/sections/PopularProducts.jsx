@@ -15,7 +15,7 @@ const PopularProducts = () => {
         {
           products.map((prod, index) => {
             return (
-              <PopularProduct {...prod} />
+              <PopularProduct {...prod} key={index} />
             );
           })
         }
