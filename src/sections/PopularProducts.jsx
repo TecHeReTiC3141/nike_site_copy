@@ -6,7 +6,7 @@ import PopularProduct from '../components/PopularProduct';
 
 const PopularProducts = () => {
   return (
-    <section className="max-container max-sm:mt-12">
+    <section className="max-container max-sm:mt-12" id="products">
       <h1 className="capitalize font-palanquin text-4xl mb-5 font-bold ">Our <span className="text-coral-red">popular</span> products</h1>
 
       <p className="font-montserrat text-slate-gray lg:max-w-lg">Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value</p>

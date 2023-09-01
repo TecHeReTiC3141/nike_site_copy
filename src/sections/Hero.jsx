@@ -14,7 +14,7 @@ const Hero = () => {
       <section id="id" className="w-full flex flex-col xl:flex-row items-center justify-start min-h-screen gap-10 max-container">
           <div className="relative xl:w-2/5 flex flex-col w-full items-start max-xl:padding-x pt-28">
             <p className="font-montserrat text-xl text-coral-red">Our Summer collections</p>
-            <h1 className="mt-10 text-8xl font-palanquin font-[650] max-sm:text-[72px] max-sm:leading-[82]">
+            <h1 className="mt-10 text-8xl font-palanquin font-[650] max-sm:text-[72px] max-sm:leading-[82px]">
               <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">The New Arrival</span>
               <br />
               <span className="text-coral-red inline-block mt-3">Nike </span> Shoes
