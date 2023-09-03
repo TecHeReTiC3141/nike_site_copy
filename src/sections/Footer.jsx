@@ -33,7 +33,7 @@ const Footer = () => {
               return (
                 <div className="text-white" key={index}>
                   <h3 className="font-montserrat texl-2xl font-medium">{link.title}</h3>
-                  <ul className="flex flex-col gap-2 mt-4">
+                  <ul className="flex flex-col gap-2 mt-4" key={index} >
                     {
                       link.links.map((li, index) => (
                         <li key={link.name}>

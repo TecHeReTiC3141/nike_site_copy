@@ -21,6 +21,22 @@
   .input {
     @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
   }
+
+  .sm-nav.active { 
+    @apply p-2 h-[11rem] shadow-lg;
+  }
+
+  .sm-nav:not(.active) {
+    @apply h-0;
+  }
+
+  header.on-top {
+    @apply absolute py-8;
+  }
+
+  header:not(.on-top) {
+    @apply fixed left-0 top-0 border-b border-slate-gray py-6 bg-white;
+  }
 }
 
 @layer utilities {

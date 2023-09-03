@@ -13,22 +13,35 @@ import {
   CustomerReviews,
   Footer,
 } from './sections/index';
+import UpArrow from './components/UpArrow';
 import Nav from './components/Nav';
 
 export default function App() {
 
+  function handleScroll(ev) {
+    console.log('scroll', window.scrollY);
+    const upArrow = document.querySelector("#up-arrow");
+    if (Math.round(window.scrollY) > window.innerHeight) {
+        upArrow.classList.add("opacity-100")
+        upArrow.classList.remove("opacity-0")
+    } else {
+        upArrow.classList.remove("opacity-100")
+        upArrow.classList.add("opacity-0");
+    }
+  }
+
+  React.useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
   return (
     
-    <main className="relative">
+    <main className="relative" onScroll={handleScroll}>
       <Nav />
       <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
 
       </section>
-
-      {/* <section className="padding">
-        <Products />
-      </section> */}
       <section className="padding">
         <PopularProducts />
       </section>
@@ -50,6 +63,7 @@ export default function App() {
       <section className="padding-x padding-t bg-black pb-8 text-gray-100">
         <Footer />
       </section>
+      <UpArrow />
     </main>
      
 
